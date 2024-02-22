@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./src/styles/input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+  <body>
+    <nav
+      class="bg-white text-black flex justify-between cursor-pointer w-full border-b-2"
+    >
+      <p
+        class="font-bold justify-self-start px-10 ml-8 py-4 text-xl hover:text-blue-600 transition ease-in-out"
+      >
+        Jishnu
+      </p>
+      <ul class="flex justify-end gap-10 px-4 py-4 mr-28 text-lg">
+        <a
+          href="#"
+          class="menu hover:font-bold hover:text-slate-400 transition ease-in-out hid"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="menu hover:font-bold hover:text-slate-400 transition ease-in-out hid"
+          >About</a
+        >
+        <a
+          href="#education"
+          class="menu hover:font-bold hover:text-slate-400 transition ease-in-out hid"
+          >Education</a
+        >
+        <a
+          href="#skills"
+          class="menu hover:font-bold hover:text-slate-400 transition ease-in-out hid"
+          >Skills</a
+        >
+        <a
+          href="#projects"
+          class="menu hover:font-bold hover:text-slate-400 transition ease-in-out hid"
+          >Projects</a
+        >
+        <a
+          href="#contact"
+          class="menu hover:font-bold hover:text-slate-400 transition ease-in-out hid"
+          >Contact</a
+        >
+        <button style="font-size: 25px" onclick="display()">
+          <i class="fa fa-bars"></i>
+        </button>
+      </ul>
+    </nav>
+    <main>
+      <div class="intro flex pt-32 pb-10 px-20 justify-between">
+        <section>
+          <h1 class="text-5xl text-orange-400 font-bold mb-10">Hi There,</h1>
+          <h1 class="text-5xl text-blue-900 font-bold mb-10">
+            I'm Jishnu Jayant Bandodkar
+          </h1>
+          <h3 class="text-4xl font-medium mb-10 typed-text-par">
+            I am into <span class="typed-text"></span>
+          </h3>
+        </section>
+        <section>
+          <img src="./src/assets/images/bg-image2.jpg" alt="profile-image" />
+        </section>
+      </div>
+      <div id="about">
+        <div class="header mb-10 flex justify-center space-x-5">
+          <img src="./src/assets/images/profile.png" class="w-16" alt="" />
+          <h1 class="text-black text-4xl font-bold text-center pt-2">
+            About Me
+          </h1>
+        </div>
+        <div class="about flex px-20 py-10 gap-20">
+          <img
+            src="./src/assets/images/bg-image.jpg"
+            class="w-96"
+            alt="profile-image"
+          />
+          <div class="about-text">
+            <h3 class="text-3xl font-medium mb-5">Who am I ?</h3>
+            <p class="text-2xl font-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              impedit repellat molestias unde, reprehenderit ratione iste amet
+              quisquam facilis nostrum beatae, exercitationem blanditiis
+              expedita maxime necessitatibus fugiat praesentium aperiam tenetur
+              vel quos, magnam provident!
+            </p>
+            <button
+              class="px-5 py-2 mx-5 mt-10 bg-purple-600 text-white hover:bg-white hover:text-black rounded-xl hover:border border-solid border-black"
+            >
+              Download CV
+            </button>
+            <button
+              class="px-5 py-2 mx-5 mt-10 bg-purple-600 text-white hover:bg-white hover:text-black rounded-xl hover:border border-solid border-black"
+            >
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="education">
+        <div class="header mb-10 flex justify-center space-x-5">
+          <img src="./src/assets/images/book.png" class="w-16 pt-2" alt="" />
+          <h1 class="text-black text-4xl font-bold text-center pt-2">
+            Education
+          </h1>
+        </div>
+        <div class="timeline relative my-8 mx-auto max-w-screen-xl">
+          <div class="text-box-container relative w-1/2 py-3 px-12 left-0">
+            <img
+              src="./src/assets/images/school-logo.jpg"
+              class="w-16 rounded-full absolute -right-8 top-8 z-10"
+              alt=""
+            />
+            <div class="text-box py-5 px-8 bg-blue-700 rounded-md text-white">
+              <h1 class="font-semibold text-2xl mb-2">
+                Dr.Sarvepalli Radhakrishnan Vidyalaya
+              </h1>
+              <h2>School</h2>
+              <h3>2008-2020</h3>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+          <div
+            id="right-container"
+            class="text-box-container relative w-1/2 py-3 px-12 left-1/2"
+          >
+            <img
+              src="./src/assets/images/pace-logo.png"
+              class="w-16 absolute -left-8 top-8 z-10"
+              alt=""
+            />
+            <div class="text-box py-5 px-8 bg-blue-700 rounded-md text-white">
+              <h1 class="font-semibold text-2xl mb-2">
+                Pace Junior Science College
+              </h1>
+              <h2>Junior College</h2>
+              <h3>2020-2022</h3>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+          <div class="text-box-container relative w-1/2 py-3 px-12 left-0">
+            <img
+              src="./src/assets/images/vjti-logo.png"
+              class="w-16 absolute -right-8 top-8 z-10"
+              alt=""
+            />
+            <div class="text-box py-5 px-8 bg-blue-700 rounded-md text-white">
+              <h1 class="font-semibold text-2xl mb-2">
+                Veermata Jijabai Technological Institute
+              </h1>
+              <h2>B.Tech Computer Engineering</h2>
+              <h3>2022-Present</h3>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="skills"
+        class="bg-gradient-to-b from-violet-500 to-fuchsia-500 py-5 mb-5"
+      >
+        <div class="header mb-10 flex justify-center space-x-5">
+          <img src="./src/assets/images/skills.png" class="w-16" alt="" />
+          <h1 class="text-black text-4xl font-bold text-center pt-2">
+            Skills and Abilities
+          </h1>
+        </div>
+        <div class="grid-container cursor-pointer">
+          <div
+            class="bg-black text-yellow-400 text-3xl font-semibold hover:bg-orange-500 grid-items"
+          >
+            <img src="./src/assets/images/html.png" class="w-24" alt="" />
+            <h1>HTML</h1>
+          </div>
+          <div
+            class="bg-black text-yellow-400 text-3xl font-semibold hover:bg-orange-500 grid-items"
+          >
+            <img src="./src/assets/images/css.png" class="w-24" alt="" />
+            <h1>CSS</h1>
+          </div>
+          <div
+            class="bg-black text-yellow-400 text-3xl font-semibold hover:bg-orange-500 grid-items"
+          >
+            <img
+              src="./src/assets/images/tailwind-css.png"
+              class="w-24"
+              alt=""
+            />
+            <h1>Tailwind CSS</h1>
+          </div>
+          <div
+            class="bg-black text-yellow-400 text-3xl font-semibold hover:bg-orange-500 grid-items"
+          >
+            <img src="./src/assets/images/nodejs.png" class="w-24" alt="" />
+            <h1>Node JS</h1>
+          </div>
+          <div
+            class="bg-black text-yellow-400 text-3xl font-semibold hover:bg-orange-500 grid-items"
+          >
+            <img src="./src/assets/images/expressjs.png" class="w-24" alt="" />
+            <h1>Express JS</h1>
+          </div>
+          <div
+            class="bg-black text-yellow-400 text-3xl font-semibold hover:bg-orange-500 grid-items"
+          >
+            <img src="./src/assets/images/c.png" class="w-24" alt="" />
+            <h1>C</h1>
+          </div>
+          <div
+            class="bg-black text-yellow-400 text-3xl font-semibold hover:bg-orange-500 grid-items"
+          >
+            <img src="./src/assets/images/c++.png" class="w-24" alt="" />
+            <h1>C++</h1>
+          </div>
+          <div
+            class="bg-black text-yellow-400 text-3xl font-semibold hover:bg-orange-500 grid-items"
+          >
+            <img src="./src/assets/images/python.png" class="w-24" alt="" />
+            <h1>Python</h1>
+          </div>
+        </div>
+      </div>
+      <div id="projects">
+        <div class="header my-10 flex justify-center space-x-5">
+          <img src="./src/assets/images/project.png" class="w-16" alt="" />
+          <h1 class="text-black text-4xl font-bold text-center pt-2">
+            Projects
+          </h1>
+        </div>
+        <div class="flex my-5 justify-center space-x-10">
+          <button
+            onclick="showAll()"
+            class="px-5 py-2 bg-purple-600 text-white hover:bg-white hover:text-black rounded-xl hover:border border-solid border-black"
+          >
+            All
+          </button>
+          <button
+            onclick="showWebDevelopment()"
+            class="px-5 py-2 bg-purple-600 text-white hover:bg-white hover:text-black rounded-xl hover:border border-solid border-black"
+          >
+            Web Development
+          </button>
+          <button
+            onclick="showPython()"
+            class="px-5 py-2 bg-purple-600 text-white hover:bg-white hover:text-black rounded-xl hover:border border-solid border-black"
+          >
+            Python
+          </button>
+        </div>
+        <div class="projects flex justify-evenly mx-auto my-10">
+          <div id="pythonProject" class="project-box">
+            <img src="./src/assets/images/python-project.png" alt="" />
+            <div class="project-box-content">
+              <div class="project-content">
+                <ul class="social">
+                  <li><i class="fa-solid fa-eye"></i></li>
+                  <li><i class="fa-solid fa-link"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="portfolioProject" class="project-box">
+            <img src="./src/assets/images/portfolio-project.png" alt="" />
+            <div class="project-box-content">
+              <div class="project-content">
+                <ul class="social">
+                  <li><i class="fa-solid fa-eye"></i></li>
+                  <li><i class="fa-solid fa-link"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      id="contact"
+      class="flex justify-center gap-4 pl-5 py-10 bg-black text-white"
+    >
+      <div class="flex flex-col gap-1 w-96">
+        <h1 class="text-2xl font-medium mb-5">Jishnu's Portfolio</h1>
+        <p class="text-lg font-normal">
+          Thank you for visiting my personal portfolio website. Connect with me
+          over socials.
+        </p>
+      </div>
+      <div class="flex flex-col w-96">
+        <h1 class="text-2xl font-medium mb-5">Quick Links</h1>
+        <a href="#" class="text-lg pl-1 hover:text-yellow-400"
+          ><i class="fa-solid fa-circle-chevron-right mr-3"></i>Home</a
+        >
+        <a href="#about" class="text-lg pl-1 hover:text-yellow-400"
+          ><i class="fa-solid fa-circle-chevron-right mr-3"></i>About</a
+        >
+        <a href="#education" class="text-lg pl-1 hover:text-yellow-400"
+          ><i class="fa-solid fa-circle-chevron-right mr-3"></i>Education</a
+        >
+        <a href="#skills" class="text-lg pl-1 hover:text-yellow-400"
+          ><i class="fa-solid fa-circle-chevron-right mr-3"></i>Skills</a
+        >
+        <a href="#projects" class="text-lg pl-1 hover:text-yellow-400"
+          ><i class="fa-solid fa-circle-chevron-right mr-3"></i>Projects</a
+        >
+      </div>
+      <div class="w-96">
+        <h1 class="text-2xl font-medium mb-5">Contact Info</h1>
+        <div class="my-5">
+          <p class="text-lg pl-1">+91 XXX-XXX-XXXX</p>
+          <p class="text-lg pl-1">jish2homeworld@gmail.com</p>
+          <p class="text-lg pl-1">Mumbai, Maharashtra-400064</p>
+        </div>
+        <div class="flex gap-3 cursor-pointer text-xl text-black">
+          <i
+            class="fa-brands fa-linkedin bg-slate-100 px-2 py-2 rounded-full hover:bg-yellow-400 hover:scale-110"
+          ></i>
+          <i
+            class="fa-brands fa-github bg-slate-100 px-2 py-2 rounded-full hover:bg-yellow-400 hover:scale-110"
+          ></i>
+          <i
+            class="fa-solid fa-envelope bg-slate-100 px-2 py-2 rounded-full hover:bg-yellow-400 hover:scale-110"
+          ></i>
+          <i
+            class="fa-brands fa-instagram bg-slate-100 px-2 py-2 rounded-full hover:bg-yellow-400 hover:scale-110"
+          ></i>
+          <i
+            class="fa-brands fa-facebook bg-slate-100 px-2 py-2 rounded-full hover:bg-yellow-400 hover:scale-110"
+          ></i>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
